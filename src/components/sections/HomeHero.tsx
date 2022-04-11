@@ -1,6 +1,7 @@
 import React from 'react'
 import FadeInAnimation from '../shared/revealAnimation'
 import { Images } from '@/lib'
+import { Image } from '@/components/elements'
 export function HomeHero() {
   return (
     <FadeInAnimation>
@@ -12,9 +13,9 @@ export function HomeHero() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mattis ut
           augue arcu, dui lacinia tempor, tristique morbi. Nunc velit{' '}
         </p>
-        <button className="h-12 px-5 bg-accent">Get a Quote</button>
+        <button className="h-12 px-5 mb-5 bg-accent">Get a Quote</button>
       </div>
-      <img className="h-full w-full" src={Images.HomeHeroBg} />
+      <img alt={'hero'} src={Images.HomeHeroBg} />
     </FadeInAnimation>
   )
 }

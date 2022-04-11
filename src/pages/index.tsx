@@ -19,6 +19,7 @@ function Home() {
     <div>
       <Head>
         <title>ONE-OF-BUSINESS</title>
+        <link rel="preload" href="/assets/images/home-hero.png" as="image" />
       </Head>
       <Header />
       <HomeHero />

@@ -1,5 +1,5 @@
 export const Images = {
-  HomeHeroBg: '/assets/images/home-hero.svg',
+  HomeHeroBg: '/assets/images/home-hero.png',
   HomeCTA: '/assets/images/home-cta.svg',
   HomeChartPreview: '/assets/images/chart-preview.svg',
   NftPreview1: '/assets/images/nft-preview1.svg',

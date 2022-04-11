@@ -18,8 +18,8 @@ export function NFTCollections(props) {
         </div>
         <div className="mt-10">
           <Slider align={'center'}>
-            {data.map((item) => (
-              <CollectionCard item={item} />
+            {data.map((item, index) => (
+              <CollectionCard key={`collection-${index}`} item={item} />
             ))}
           </Slider>
         </div>
