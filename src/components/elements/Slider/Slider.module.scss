@@ -1,0 +1,38 @@
+.Slider {
+  position: relative;
+}
+.Embla {
+  overflow: hidden;
+}
+
+.Slider:hover .NextButton {
+  display: flex;
+}
+.Slider:hover .NextButton:disabled {
+  display: none;
+}
+
+.SliderOverlay {
+  position: absolute ;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: min-content;
+  top : 0 ;
+  z-index: 40;
+
+}
+
+.NextButton {
+  display: none;
+  border: none;
+  background-color: white;
+  z-index: 40;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid gainsboro;
+}
+

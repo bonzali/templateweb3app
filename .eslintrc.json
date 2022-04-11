@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["plugin:prettier/recommended", "plugin:@next/next/recommended"],
+  "plugins": ["react", "@typescript-eslint"],
+  "env": {
+    "node": true,
+    "browser": true,
+    "jasmine": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": ["error" , {
+      "singleQuote": true
+    }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "src"]],
+        "extension": [".ts", ".tsx", ".js", ".jsx"]
+      }
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
 }
